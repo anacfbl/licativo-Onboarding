@@ -442,9 +442,6 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         let tempoHoras = tempo/60
         let tempoMinutos = tempo%60
         
-        print(tempoHoras)
-        print(tempo)
-        print(tempoMinutos)
         
         resultadoLabel.isHidden = false
         resultadoLabel.text = "hoje você precisará de \n \(tempoHoras) horas e \(tempoMinutos) min para cumprir suas atividades"
@@ -476,6 +473,5 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     @IBAction func gesture(_ sender: Any) {
         viewTela2.endEditing(true)
     }
-    
     
 } //fecha o view controller
